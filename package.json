@@ -5,6 +5,7 @@
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "prepare": "npm run compile",
+  "postinstall": "cd node_modules/@reonomy/react-confetti-explosion/ && npm install && npm run compile"
   "scripts": {
     "compile": "tsc --declaration -p ./tsconfig.json --outDir lib/",
     "lint": "eslint --ext .ts,.tsx --ignore-pattern '**/*.spec.*' --ignore-pattern '**/*.d.ts' src/",
