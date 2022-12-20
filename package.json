@@ -9,8 +9,7 @@
     "compile": "tsc --declaration -p ./tsconfig.json --outDir lib/",
     "lint": "eslint --ext .ts,.tsx --ignore-pattern '**/*.spec.*' --ignore-pattern '**/*.d.ts' src/",
     "prepare": "npm run compile",
-      "postinstall": "cd node_modules/@reonomy/react-confetti-explosion/ && npm install && npm run compile",
-
+    "postinstall": "cd node_modules/@reonomy/react-confetti-explosion/ && npm install && npm run compile"
   },
   "husky": {
     "hooks": {
