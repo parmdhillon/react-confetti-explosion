@@ -9,7 +9,7 @@
     "compile": "tsc --declaration -p ./tsconfig.json --outDir lib/",
     "lint": "eslint --ext .ts,.tsx --ignore-pattern '**/*.spec.*' --ignore-pattern '**/*.d.ts' src/",
     "prepare": "npm run compile",
-    "postinstall": "npm run compile --legacy-peer-deps"
+    "postinstall": "yarn --legacy-peer-deps && yarn compile"
   },
   "husky": {
     "hooks": {
