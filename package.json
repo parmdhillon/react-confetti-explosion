@@ -4,9 +4,11 @@
   "description": "A lightweight css-animation based confetti exploder for React",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
+  "prepare": "npm run compile",
   "scripts": {
     "compile": "tsc --declaration -p ./tsconfig.json --outDir lib/",
-    "lint": "eslint --ext .ts,.tsx --ignore-pattern '**/*.spec.*' --ignore-pattern '**/*.d.ts' src/"
+    "lint": "eslint --ext .ts,.tsx --ignore-pattern '**/*.spec.*' --ignore-pattern '**/*.d.ts' src/",
+    "prepare": "npm run compile"
   },
   "husky": {
     "hooks": {
